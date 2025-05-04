@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Periodic Table </h1>
+  <input type="text" id="search" placeholder="Search element by name or symbol"> 
+  <table class="periodic-table">
+    <tr>
+      <td class="element1" data-index="1">
+        <div>H</div>
+        <small>1</small>
+      </td>
+      <td colspan="16" class="blank"></td>
+      <td class="element11" data-index="2">
+        <div>He</div>
+        <small>2</small>
+      </td>
+    </tr>
+
+    <!-- Period 2 -->
+    <tr>
+      <td class="element2" data-index="3">
+        <div>Li</div>
+        <small>3</small>
+      </td>
+      <td class="element3" data-index ="4">
+        <div>Be</div>
+        <small>4</small>
+      </td>
+      <td colspan="10" class="blank"></td>
+      <td class="element8" data-index="5">
+        <div>B</div>
+        <small>5</small>
+      </td>
+      <td class="element9" data-index="6">
+        <div>C</div>
+        <small>6</small>
+      </td>
+      <td class="element9" data-index="7">
+        <div>N</div>
+        <small>7</small>
+      </td>
+      <td class="element9" data-index="8">
+        <div>O</div>
+        <small>8</small>
+      </td>
+      <td class="element10" data-index="9">
+        <div>F</div>
+        <small>9</small>
+      </td>
+      <td class="element11" data-index="10">
+        <div>Ne</div>
+        <small>10</small>
+      </td>
+    </tr>
+
+    <!-- Period 3 -->
+    <tr>
+      <td class="element2" data-index="11">
+        <div>Na</div>
+        <small>11</small>
+      </td>
+      <td class="element3" data-index="12">
+        <div>Mg</div>
+        <small>12</small>
+      </td>
+      <td colspan="10" class="blank"></td>
+      <td class="element7" data-index="13">
+        <div>Al</div>
+        <small>13</small>
+      </td>
+      <td class="element8" data-index="14">
+        <div>Si</div>
+        <small>14</small>
+      </td>
+      <td class="element9" data-index="15">
+        <div>P</div>
+        <small>15</small>
+      </td>
+      <td class="element9" data-index="16">
+        <div>S</div>
+        <small>16</small>
+      </td>
+      <td class="element10" data-index="17">
+        <div>Cl</div>
+        <small>17</small>
+      </td>
+      <td class="element11" data-index="18">
+        <div>Ar</div>
+        <small>18</small>
+      </td>
+    </tr>
+
+    <!-- Period 4 -->
+    <tr>
+      <td class="element2" data-index="19">
+        <div>K</div>
+        <small>19</small>
+      </td>
+      <td class="element3" data-index="20">
+        <div>Ca</div>
+        <small>20</small>
+      </td>
+      <td class="element6" data-index="21">
+        <div>Sc</div>
+        <small>21</small>
+      </td>
+      <td class="element6" data-index="22">
+        <div>Ti</div>
+        <small>22</small>
+      </td>
+      <td class="element6" data-index="23">
+        <div>V</div>
+        <small>23</small>
+      </td>
+      <td class="element6" data-index="24">
+        <div>Cr</div>
+        <small>24</small>
+      </td>
+      <td class="element6" data-index="25">
+        <div>Mn</div>
+        <small>25</small>
+      </td>
+      <td class="element6" data-index="26">
+        <div>Fe</div>
+        <small>26</small>
+      </td>
+      <td class="element6" data-index="27">
+        <div>Co</div>
+        <small>27</small>
+      </td>
+      <td class="element6" data-index="28">
+        <div>Ni</div>
+        <small>28</small>
+      </td>
+      <td class="element6" data-index="29">
+        <div>Cu</div>
+        <small>29</small>
+      </td>
+      <td class="element6" data-index="30">
+        <div>Zn</div>
+        <small>30</small>
+      </td>
+      <td class="element7" data-index="31">
+        <div>Ga</div>
+        <small>31</small>
+      </td>
+      <td class="element8" data-index="32">
+        <div>Ge</div>
+        <small>32</small>
+      </td>
+      <td class="element8" data-index="33">
+        <div>As</div>
+        <small>33</small>
+      </td>
+      <td class="element9" data-index="34">
+        <div>Se</div>
+        <small>34</small>
+      </td>
+      <td class="element10" data-index="35">
+        <div>Br</div>
+        <small>35</small>
+      </td>
+      <td class="element11" data-index="36">
+        <div>Kr</div>
+        <small>36</small>
+      </td>
+    </tr>
+
+    <!-- Period 5 -->
+    <tr>
+      <td class="element2" data-index="37">
+        <div>Rb</div>
+        <small>37</small>
+      </td>
+      <td class="element3" data-index="38">
+        <div>Sr</div>
+        <small>38</small>
+      </td>
+      <td class="element6" data-index="39">
+        <div>Y</div>
+        <small>39</small>
+      </td>
+      <td class="element6" data-index="40">
+        <div>Zr</div>
+        <small>40</small>
+      </td>
+      <td class="element6" data-index="41">
+        <div>Nb</div>
+        <small>41</small>
+      </td>
+      <td class="element6" data-index="42">
+        <div>Mo</div>
+        <small>42</small>
+      </td>
+      <td class="element6" data-index="43">
+        <div>Tc</div>
+        <small>43</small>
+      </td>
+      <td class="element6" data-index="44">
+        <div>Ru</div>
+        <small>44</small>
+      </td>
+      <td class="element6" data-index="45">
+        <div>Rh</div>
+        <small>45</small>
+      </td>
+      <td class="element6" data-index="46">
+        <div>Pd</div>
+        <small>46</small>
+      </td>
+      <td class="element6" data-index="47">
+        <div>Ag</div>
+        <small>47</small>
+      </td>
+      <td class="element6" data-index="48">
+        <div>Cd</div>
+        <small>48</small>
+      </td>
+      <td class="element7" data-index="49">
+        <div>In</div>
+        <small>49</small>
+      </td>
+      <td class="element7" data-index="50">
+        <div>Sn</div>
+        <small>50</small>
+      </td>
+      <td class="element8" data-index="51">
+        <div>Sb</div>
+        <small>51</small>
+      </td>
+      <td class="element8" data-index="52">
+        <div>Te</div>
+        <small>52</small>
+      </td>
+      <td class="element10" data-index="53">
+        <div>I</div>
+        <small>53</small>
+      </td>
+      <td class="element11" data-index="54">
+        <div>Xe</div>
+        <small>54</small>
+      </td>
+    </tr>
+    <!-- Period 6 -->
+<tr>
+  <td class="element2" data-index="55">
+    <div>Cs</div>
+    <small>55</small>
+  </td>
+  <td class="element3" data-index="56">
+    <div>Ba</div>
+    <small>56</small>
+  </td>
+  <td class="element4" data-index="">
+    <div>57 - 71</div>
+    <small>Lanthanides</small>
+  </td>
+  <td class="element6" data-index="72">
+    <div>Hf</div>
+    <small>72</small>  
+  </td>
+  <td class="element6" data-index="73">
+    <div>Ta</div>
+    <small>73</small>
+  </td>
+  <td class="element6" data-index="74">
+    <div>W</div>
+    <small>74</small>
+  </td>
+  <td class="element6" data-index="75">
+    <div>Re</div>
+    <small>75</small>
+  </td>
+  <td class="element6" data-index="76">
+    <div>Os</div>
+    <small>76</small>
+  </td>
+  <td class="element6" data-index="77">
+    <div>Ir</div>
+    <small>77</small>
+  </td>
+  <td class="element6" data-index="78">
+    <div>Pt</div>
+    <small>78</small>
+  </td>
+  <td class="element6" data-index="79">
+    <div>Au</div>
+    <small>79</small>
+  </td>
+  <td class="element6" data-index="80">
+    <div>Hg</div>
+    <small>80</small>
+  </td>
+  <td class="element7" data-index="81">
+    <div>Tl</div>
+    <small>81</small>
+  </td>
+  <td class="element7" data-index="82">
+    <div>Pb</div>
+    <small>82</small>
+  </td>
+  <td class="element7" data-index="83">
+    <div>Bi</div>
+    <small>83</small>
+  </td>
+  <td class="element8" data-index="84">
+    <div>Po</div>
+    <small>84</small>
+  </td>
+  <td class="element10" data-index="85">
+    <div>At</div>
+    <small>85</small>
+  </td>
+  <td class="element11" data-index="86">
+    <div>Rn</div>
+    <small>86</small>
+  </td>
+</tr>
+
+<!-- Period 7 -->
+<tr>
+  <td class="element2" data-index="87">
+    <div>Fr</div>
+    <small>87</small>
+  </td>
+  <td class="element3" data-index="88">
+    <div>Ra</div>
+    <small>88</small>
+  </td>
+  <td class="element5" data-index="">
+    <div>89 - 103</div>
+    <small>Actinides</small>
+  </td>
+  <td class="element6" data-index="104">
+    <div>Rf</div>
+    <small>104</small>
+  </td>
+  <td class="element6" data-index="105">
+    <div>Db</div>
+    <small>105</small>
+  </td>
+  <td class="element6" data-index="106">
+    <div>Sg</div>
+    <small>106</small>
+  </td>
+  <td class="element6" data-index="107">
+    <div>Bh</div>
+    <small>107</small>
+  </td>
+  <td class="element6" data-index="108">
+    <div>Hs</div>
+    <small>108</small>
+  </td>
+  <td class="element6" data-index="109">
+    <div>Mt</div>
+    <small>109</small>
+  </td>
+  <td class="element6" data-index="110">
+    <div>Ds</div>
+    <small>110</small>
+  </td>
+  <td class="element6" data-index="111">
+    <div>Rg</div>
+    <small>111</small>
+  </td>
+  <td class="element6" data-index="112">
+    <div>Cn</div>
+    <small>112</small>
+  </td>
+  <td class="element7" data-index="113">
+    <div>Nh</div>
+    <small>113</small>
+  </td>
+  <td class="element7" data-index="114">
+    <div>Fl</div>
+    <small>114</small>
+  </td>
+  <td class="element7" data-index="115">
+    <div>Mc</div>
+    <small>115</small>
+  </td>
+  <td class="element7" data-index="116">
+    <div>Lv</div>
+    <small>116</small>
+  </td>
+  <td class="element10" data-index="117">
+    <div>Ts</div>
+    <small>117</small>
+  </td>
+  <td class="element11" data-index="118">
+    <div>Og</div>
+    <small>118</small>
+  </td>
+</tr>
+
+<!-- Lanthanides -->
+</td> 
+<td colspan="1" class="blank"></td>
+<tr class="lanthanides">
+  <td class="element4" data-index="57">
+    <div>La</div>
+    <small>57</small>
+  </td>
+  <td class="element4" data-index="58">
+    <div>Ce</div>
+    <small>58</small>
+  </td>
+  <td class="element4" data-index="59">
+    <div>Pr</div>
+    <small>59</small>
+  </td>
+  <td class="element4" data-index="60">
+    <div>Nd</div>
+    <small>60</small>
+  </td>
+  <td class="element4" data-index="61">
+    <div>Pm</div>
+    <small>61</small>
+  </td>
+  <td class="element4" data-index="62">
+    <div>Sm</div>
+    <small>62</small>
+  </td>
+  <td class="element4" data-index="63">
+    <div>Eu</div>
+    <small>63</small>
+  </td>
+  <td class="element4" data-index="64">
+    <div>Gd</div>
+    <small>64</small>
+  </td>
+  <td class="element4" data-index="65">
+    <div>Tb</div>
+    <small>65</small>
+  </td>
+  <td class="element4" data-index="66">
+    <div>Dy</div>
+    <small>66</small>
+  </td>
+  <td class="element4" data-index="67">
+    <div>Ho</div>
+    <small>67</small>
+  </td>
+  <td class="element4" data-index="68">
+    <div>Er</div>
+    <small>68</small>
+  </td>
+  <td class="element4" data-index="69">
+    <div>Tm</div>
+    <small>69</small>
+  </td>
+  <td class="element4" data-index="70">
+    <div>Yb</div>
+    <small>70</small>
+  </td>
+  <td class="element4" data-index="71">
+    <div>Lu</div>
+    <small>71</small>
+  </td>
+</tr>
+
+<!-- Actinides -->
+<tr class="actinides">
+  <td class="element5" data-index="89">
+    <div>Ac</div>
+    <small>89</small>
+  </td>
+  <td class="element5" data-index="90">
+    <div>Th</div>
+    <small>90</small>
+  </td>
+  <td class="element5" data-index="91">
+    <div>Pa</div>
+    <small>91</small>
+  </td>
+  <td class="element5" data-index="92">
+    <div>U</div>
+    <small>92</small>
+  </td>
+  <td class="element5" data-index="93">
+    <div>Np</div>
+    <small>93</small>
+  </td>
+  <td class="element5" data-index="94">
+    <div>Pu</div>
+    <small>94</small>
+  </td>
+  <td class="element5" data-index="95">
+    <div>Am</div>
+    <small>95</small>
+  </td>
+  <td class="element5" data-index="96">
+    <div>Cm</div>
+    <small>96</small>
+  </td>
+  <td class="element5" data-index="97">
+    <div>Bk</div>
+    <small>97</small>
+  </td>
+  <td class="element5" data-index="98">
+    <div>Cf</div>
+    <small>98</small>
+  </td>
+  <td class="element5" data-index="99">
+    <div>Es</div>
+    <small>99</small>
+  </td>
+  <td class="element5" data-index="100">
+    <div>Fm</div>
+    <small>100</small>
+  </td>
+  <td class="element5" data-index="101">
+    <div>Md</div>
+    <small>101</small>
+  </td>
+
+    <td class="element5" data-index="102">
+      <div>No</div>
+      <small>102</small>
+    </td>
+    <td class="element5" data-index="103">
+      <div>Lr</div>
+      <small>103</small>
+    </td>
+    </table>
+    <div class="category-legend">
+      <h3>Element Categories</h3>
+      <div class="legend-grid">
+        <div class="category"><span class="box alkali"></span> Alkali Metals</div>
+        <div class="category"><span class="box alkaline"></span> Alkaline Earth Metals</div>
+        <div class="category"><span class="box transition"></span> Transition Metals</div>
+        <div class="category"><span class="box other-metals"></span> Other Metals</div>
+        <div class="category"><span class="box metalloids"></span> Metalloids</div>
+        <div class="category"><span class="box non-metals"></span> Non-Metals</div>
+        <div class="category"><span class="box halogens"></span> Halogens</div>
+        <div class="category"><span class="box noble"></span> Noble Gases</div>
+        <div class="category"><span class="box lanthanides"></span> Lanthanides</div>
+        <div class="category"><span class="box actinides"></span> Actinides</div>
+      </div>
+    </div>
+    
+
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <h2 id="element-name"></h2>
+      <p><strong>Symbol:</strong> <span id="element-symbol"></span></p>
+      <p><strong>Atomic Number:</strong> <span id="atomic-number"></span></p>
+      <p><strong>Mass Number:</strong> <span id="mass-number"></span></p>
+      <p><strong>Uses:</strong> <span id="uses"></span></p>
+      <p><strong>Importance:</strong> <span id="importance"></span></p>
+      <p><strong>Image:</strong> <img id="element-image" src="" alt="" style="width: 200px; height: auto; margin: 10px 0;">
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

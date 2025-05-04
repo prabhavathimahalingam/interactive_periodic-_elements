@@ -1,0 +1,288 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  
+}
+
+h1 {
+  padding: 20px;
+  font-size: 18px;
+  background-color: rgb(142, 250, 160);
+  margin-bottom: 10px;
+}
+
+#search {
+  padding: 18px;
+  width: 300px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+table.periodic-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+td.element5 {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element5:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
+}
+td.element4 {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element4:hover {
+  background-color:  rgb(238, 69, 69);
+  transform: scale(1.1);
+}
+td.element6 {
+  background-color: rgb(97, 97, 189);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element6:hover {
+  background-color:  blue;
+  transform: scale(1.1);
+}
+td.element7 {
+  background-color: rgb(66, 64, 64);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element7:hover {
+  background-color:  black;
+  transform: scale(1.1);
+}
+td.element8 {
+  background-color: rgb(196, 181, 181);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element8:hover {
+  background-color: rgb(185, 171, 171);
+  transform: scale(1.1);
+}
+td.element9 {
+  background-color: rgb(250, 70, 145);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element9:hover {
+  background-color: rgb(173, 29, 130);
+  transform: scale(1.1);
+}
+td.element10 {
+  background-color: rgb(103, 222, 252);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element10:hover {
+  background-color:  rgb(145, 215, 248);
+  transform: scale(1.1);
+}
+td.element11 {
+  background-color: rgb(219, 73, 219);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element11:hover {
+  background-color: rgb(145, 14, 145);
+  transform: scale(1.1);
+}
+td.element3 {
+  background-color: rgb(245, 161, 6);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element3:hover {
+  background-color: rgb(216, 154, 40);
+  transform: scale(1.1);
+}
+td.element2 {
+  background-color: rgb(247, 247, 92);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element2:hover {
+  background-color:  rgba(255, 255, 0, 0.952);
+  transform: scale(1.1);
+}
+td.element1 {
+  background-color: rgb(123, 247, 216);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+td.element1:hover {
+  background-color: #81deeb;
+  transform: scale(1.1);}
+
+td.blank {
+  background: transparent;
+  pointer-events: none;
+}
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.98);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+  width: 350px;
+  max-width: 90%;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+.modal-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin: 5px 0;
+}
+
+.modal img {
+  width: 150px;
+  height: auto;
+  margin: 5px 0;
+}
+
+.modal img {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+td.empty-placeholder {
+  background: transparent !important;
+  pointer-events: none;
+  border: none;
+}
+td.blank {
+  background: transparent;
+  pointer-events: none;
+}
+td.blank, td.empty-placeholder {
+  background: transparent !important;
+  border: none !important;
+  pointer-events: none;
+}
+
+.category-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.alkali { background-color: rgb(247, 247, 92); }
+.alkaline { background-color: rgb(245, 161, 6); }
+.transition { background-color: rgb(97, 97, 189); }
+.other-metals { background-color: rgb(66, 64, 64); }
+.metalloids { background-color: rgb(196, 181, 181); }
+.non-metals { background-color: rgb(250, 70, 145); }
+.halogens { background-color: rgb(103, 222, 252); }
+.noble { background-color: rgb(219, 73, 219); }
+.lanthanides { background-color: red; }
+.actinides { background-color: #4caf50; }
+
+#close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(252, 128, 128);
+}
+#close:hover {
+  color: rgb(216, 89, 89);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
