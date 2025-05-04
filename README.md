@@ -9,7 +9,7 @@ perio/
 ├── demo.html # Main HTML file
 ├── styles.css # Styling (CSS)
 ├── script.js # JavaScript 
-├──images #  
+├──images  
 ├──images2
 
 
