@@ -1,4 +1,4 @@
-# Perio Web Project
+# INTERACTIVE PERIODIC-TABLE   Web Project
 
 This is a simple front-end web project named **Perio**, which demonstrates interactive functionality using HTML, CSS, and JavaScript.
 
